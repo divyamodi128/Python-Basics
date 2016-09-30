@@ -1,15 +1,15 @@
 import os
 
-dir = '/media/divya/Backups/TBD/Testing'
+dir = '/path/to/directory'
 
 print os.listdir(dir)
 os.chdir(dir)
 lsnames = os.listdir(dir)
 
 for names in lsnames:
-    ext = names.split('.')[-1]
-    filename = names.split('.')[0]
-    name = filename.split()[1:]
+    ext = names.split('.')[-1]                  # Stores the extensions in ext variable
+    filename = names.split('.')[0]              # Stores the filename
+    name = filename.split()[1:]                 
     newname = str(name[1]) + '_' + str(name[0]) + '.' + ext
     print newname
     os.rename(names, newname)
