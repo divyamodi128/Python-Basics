@@ -1,2 +1,2 @@
 # Python-Basics
-Simple Python coding at basic level
+MySQl Database connection and CRUD operation
